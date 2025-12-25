@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¡Feliz Navidad!</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <button class="music-button" id="musicButton" onclick="toggleMusic()">🔇</button>
+
+    <audio id="music" loop>
+        <source src="audio/navidad.mp3" type="audio/mpeg">
+    </audio>
+
+    <div class="snow" id="snow"></div>
+    
+    <div class="ground"></div>
+
+    <div class="container">
+        <div class="christmas-tree">
+            <div class="star">⭐</div>
+            <div class="tree-body">🌲</div>
+        </div>
+
+        <div class="lights">
+            <div class="light"></div>
+            <div class="light"></div>
+            <div class="light"></div>
+            <div class="light"></div>
+            <div class="light"></div>
+        </div>
+
+        <h1>¡FELIZ NAVIDAD!</h1>
+
+        <div class="decorations">
+            <span class="decoration">🎅</span>
+            <span class="decoration">🎁</span>
+            <span class="decoration">⛄</span>
+            <span class="decoration">🔔</span>
+        </div>
+
+        <div class="message">
+            Que esta Navidad traiga paz, amor y felicidad a tu hogar.<br>
+            Que cada momento esté lleno de magia y los sueños se hagan realidad.
+        </div>
+
+        <div class="wishes">
+            ✨ Paz • Amor • Alegría • Prosperidad ✨
+        </div>
+
+        <div class="year">2024</div>
+
+        <button class="gift-button" onclick="openGift()">🎁 Abrir Regalo Especial</button>
+    </div>
+
+    <div class="gift-animation" id="giftAnimation">
+        <div class="gift-box">
+            <div class="gift-lid" id="giftLid">🎀</div>
+            <div class="gift-body">🎁</div>
+        </div>
+    </div>
+
+    <div class="special-message" id="specialMessage" style="display: none;">
+        <h2>✨ ¡Sorpresa! ✨</h2>
+        <p>
+            Que esta Navidad esté llena de momentos mágicos,<br>
+            risas compartidas y sueños cumplidos.<br><br>
+            🌟 ¡Felices Fiestas! 🌟
+        </p>
+        <button class="close-button" onclick="closeAnimation()">Cerrar</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
