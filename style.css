@@ -79,7 +79,7 @@ body {
 
 .star {
     color: #ffd700;
-    font-size: 1.5em;
+    font-size: 0.7em;
     animation: starTwinkle 1s ease-in-out infinite;
 }
 
